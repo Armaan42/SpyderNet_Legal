@@ -1,0 +1,107 @@
+2025-03-17T07:15:35Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2025-03-17T07:15:35Z INF Requesting new quick Tunnel on trycloudflare.com...
+2025-03-17T07:15:43Z INF +--------------------------------------------------------------------------------------------+
+2025-03-17T07:15:43Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2025-03-17T07:15:43Z INF |  https://terry-workout-bahamas-occurs.trycloudflare.com                                    |
+2025-03-17T07:15:43Z INF +--------------------------------------------------------------------------------------------+
+2025-03-17T07:15:43Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2025-03-17T07:15:43Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-17T07:15:43Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-17T07:15:43Z INF Settings: map[ha-connections:1 no-autoupdate:true protocol:quic url:http://localhost:8080]
+2025-03-17T07:15:43Z INF Generated Connector ID: 1f1211d8-0e3e-461e-96c8-da9231eb8d60
+2025-03-17T07:15:50Z INF Initial protocol quic
+2025-03-17T07:15:50Z INF ICMP proxy will use 10.253.14.52 as source for IPv4
+2025-03-17T07:15:50Z INF ICMP proxy will use fe80::e7c2:7ee0:fb12:7202 in zone wlo1 as source for IPv6
+2025-03-17T07:15:50Z WRN The user running cloudflared process has a GID (group ID) that is not within ping_group_range. You might need to add that user to a group within that range, or instead update the range to encompass a group the user is already in by modifying /proc/sys/net/ipv4/ping_group_range. Otherwise cloudflared will not be able to ping this network error="Group ID 1000 is not between ping group 1 to 0"
+2025-03-17T07:15:50Z WRN ICMP proxy feature is disabled error="cannot create ICMPv4 proxy: Group ID 1000 is not between ping group 1 to 0 nor ICMPv6 proxy: socket: permission denied"
+2025-03-17T07:15:59Z INF ICMP proxy will use 10.253.14.52 as source for IPv4
+2025-03-17T07:15:59Z INF ICMP proxy will use fe80::e7c2:7ee0:fb12:7202 in zone wlo1 as source for IPv6
+2025-03-17T07:15:59Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2025-03-17T07:15:59Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.192.37
+2025/03/17 12:45:59 failed to sufficiently increase receive buffer size (was: 208 kiB, wanted: 7168 kiB, got: 416 kiB). See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for details.
+2025-03-17T07:16:01Z INF Registered tunnel connection connIndex=0 connection=de60ba91-1821-4a87-a437-bf46d6b3ddbf event=0 ip=198.41.192.37 location=del02 protocol=quic
+2025-03-17T07:25:31Z ERR Failed to serve tunnel connection error="failed to accept QUIC stream: INTERNAL_ERROR (local): write udp [::]:37273->198.41.192.37:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.192.37
+2025-03-17T07:25:31Z ERR Serve tunnel error error="failed to accept QUIC stream: INTERNAL_ERROR (local): write udp [::]:37273->198.41.192.37:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.192.37
+2025-03-17T07:25:31Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.37
+2025-03-17T07:25:33Z ERR Connection terminated error="failed to accept QUIC stream: INTERNAL_ERROR (local): write udp [::]:37273->198.41.192.37:7844: sendmsg: network is unreachable" connIndex=0
+2025-03-17T08:23:56Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.192.37
+2025-03-17T08:23:56Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: INTERNAL_ERROR (local): write udp [::]:37273->198.41.192.37:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.192.37
+2025-03-17T08:23:56Z INF Retrying connection in up to 4s connIndex=0 event=0 ip=198.41.192.37
+2025-03-17T08:24:00Z ERR Connection terminated error="failed to dial to edge with quic: INTERNAL_ERROR (local): write udp [::]:37273->198.41.192.37:7844: sendmsg: network is unreachable" connIndex=0
+2025-03-17T08:24:02Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.113
+2025-03-17T08:24:02Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: INTERNAL_ERROR (local): write udp [::]:37273->198.41.200.113:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.200.113
+2025-03-17T08:24:02Z INF Retrying connection in up to 8s connIndex=0 event=0 ip=198.41.200.113
+2025-03-17T08:24:04Z ERR Connection terminated error="failed to dial to edge with quic: INTERNAL_ERROR (local): write udp [::]:37273->198.41.200.113:7844: sendmsg: network is unreachable" connIndex=0
+2025-03-17T08:24:56Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:24:57Z ERR Failed to serve tunnel connection error="context canceled" connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:24:57Z INF Retrying connection in up to 16s connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:25:09Z ERR Connection terminated error="context canceled" connIndex=0
+2025-03-17T08:26:27Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:26:28Z ERR Failed to serve tunnel connection error="context canceled" connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:26:28Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:26:51Z ERR Connection terminated error="context canceled" connIndex=0
+2025-03-17T08:27:29Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:27:29Z ERR Failed to serve tunnel connection error="context canceled" connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:27:29Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:27:40Z ERR Connection terminated error="context canceled" connIndex=0
+2025-03-17T08:31:40Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:31:40Z ERR Failed to serve tunnel connection error="context canceled" connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:31:40Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:31:53Z ERR Connection terminated error="context canceled" connIndex=0
+2025-03-17T08:32:23Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:32:23Z ERR Failed to serve tunnel connection error="context canceled" connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:32:23Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:32:41Z ERR Connection terminated error="context canceled" connIndex=0
+2025-03-17T08:32:50Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:32:51Z ERR Failed to serve tunnel connection error="context canceled" connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:32:51Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:32:56Z ERR Connection terminated error="context canceled" connIndex=0
+2025-03-17T08:35:56Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:35:56Z ERR Failed to serve tunnel connection error="context canceled" connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:35:56Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:35:58Z ERR Connection terminated error="context canceled" connIndex=0
+2025-03-17T08:37:27Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:37:27Z ERR Failed to serve tunnel connection error="context canceled" connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:37:27Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:37:30Z ERR Connection terminated error="context canceled" connIndex=0
+2025-03-17T08:37:43Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:37:44Z ERR Failed to serve tunnel connection error="context canceled" connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:37:44Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:38:06Z ERR Connection terminated error="context canceled" connIndex=0
+2025-03-17T08:41:23Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:41:23Z ERR Failed to serve tunnel connection error="context canceled" connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:41:23Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:41:30Z ERR Connection terminated error="context canceled" connIndex=0
+2025-03-17T08:45:13Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:45:14Z ERR Failed to serve tunnel connection error="context canceled" connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:45:14Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:45:32Z ERR Connection terminated error="context canceled" connIndex=0
+2025-03-17T08:47:32Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:47:32Z ERR Failed to serve tunnel connection error="context canceled" connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:47:32Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:47:56Z ERR Connection terminated error="context canceled" connIndex=0
+2025-03-17T08:51:31Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:51:32Z ERR Failed to serve tunnel connection error="context canceled" connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:51:32Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:51:44Z ERR Connection terminated error="context canceled" connIndex=0
+2025-03-17T08:53:15Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:53:16Z ERR Failed to serve tunnel connection error="context canceled" connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:53:16Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:53:33Z ERR Connection terminated error="context canceled" connIndex=0
+2025-03-17T08:58:48Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:58:48Z ERR Failed to serve tunnel connection error="context canceled" connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:58:48Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T08:59:06Z ERR Connection terminated error="context canceled" connIndex=0
+2025-03-17T09:00:26Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T09:00:26Z ERR Failed to serve tunnel connection error="context canceled" connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T09:00:26Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T09:00:53Z ERR Connection terminated error="context canceled" connIndex=0
+2025-03-17T09:01:37Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T09:01:37Z ERR Failed to serve tunnel connection error="context canceled" connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T09:01:37Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.233
+2025-03-17T09:02:09Z ERR Connection terminated error="context canceled" connIndex=0
+2025-03-18T11:53:11Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.233
+2025-03-18T11:53:11Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: INTERNAL_ERROR (local): write udp [::]:37273->198.41.200.233:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.200.233
+2025-03-18T11:53:11Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.233
+2025-03-18T11:53:20Z ERR Connection terminated error="failed to dial to edge with quic: INTERNAL_ERROR (local): write udp [::]:37273->198.41.200.233:7844: sendmsg: network is unreachable" connIndex=0
+2025-03-18T11:55:01Z INF Initiating graceful shutdown due to signal terminated ...
